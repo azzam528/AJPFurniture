@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJPFurniture</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <!-- js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image" href="/static/image/logo/Ajp.png">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<style>
+    @import url('static/css/default.css');
+    @import url('static/css/faq.css');
+</style>
+<script>
+    $(document).ready(function () {
+        $('button').on('click', function () {
+            var faq = $(this).next();
+            var icon = $(this).children().eq(1);
+
+            faq.toggleClass('show');
+            icon.toggleClass('rotate');
+        });
+    });
+</script>
+
+<body>
+    <div class="nav flex-row">
+        <div class="left flex-row">
+            <li>
+                <img src="/static/image/logo/Ajp.png" alt="Logo" class="logo" />
+            </li>
+        </div>
+        <div class="right flex-row">
+            <li>
+                <a href="/">Beranda</a>
+            </li>
+            <li>
+                <a href="about">Tentang Kami</a>
+            </li>
+            <li>
+                <a href="contact">Kontak</a>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle">Kategori</a>
+                <ul class="dropdown-menu">
+                    <li><a href="produk/kursi">Kursi</a></li>
+                    <li><a href="produk/lemari">Lemari</a></li>
+                    <li><a href="produk/meja">Meja</a></li>
+                    <li><a href="produk/dipan">Dipan</a></li>
+                    <li><a href="produk/sofa">Sofa</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="faq">FAQ</a>
+            </li>
+        </div>
+    </div>
+    <!-- navbar selesai -->
+    <!-- banner -->
+    <div class="banner flex-row">
+        <div class="banner-title">
+            <p>FAQ'S</p>
+        </div>
+        <div class="banner-image">
+            <img src="static/image-faq/faq.png" alt="Banner Image" width="50" height="50">
+        </div>
+    </div>
+    <!-- content -->
+    <section>
+        <h1 class="title flex-col">About Us</h1>
+
+        <div class="pertanyaan-container">
+            <div class="pertanyaan">
+                <button>
+                    <span>Dimana saya bisa lihat katalog produk?</span>
+                    <i class="fas fa-chevron-down d-arrow"></i>
+                </button>
+                <p>Untuk melihat katalog produk anda bisa menemukan di halaman awal kategori ataupun di pilihan kategori</p>
+            </div>
+
+            <div class="pertanyaan">
+                <button>
+                    <span>Bagaimana cara bayarnya?</span>
+                    <i class="fas fa-chevron-down d-arrow"></i>
+                </button>
+                <p>pertama tama anda bisa hubungi kami via whatsapp lalu kami akan menunjukan nominal harga, lalu akan melakukan proses pembayaran dengan alat pembayaran apapun</p>
+            </div>
+
+            <div class="pertanyaan">
+                <button>
+                    <span>Apakah bisa pesan furniture tanpa DP?</span>
+                    <i class="fas fa-chevron-down d-arrow"></i>
+                </button>
+                <p>Tentu saja bisa, anda bisa pesan furniture dengan sistem kredit ataupun cash</p>
+            </div>
+
+            <div class="pertanyaan">
+                <button>
+                    <span>Apakah ongkos kirim perbarang atau per trip?</span>
+                    <i class="fas fa-chevron-down d-arrow"></i>
+                </button>
+                <p>Kami mengatur harga ongkos kirim menjadi per trip, namun jika barang yang dibeli lebih dari 3 maka akan dikenai biaya tambahan</p>
+            </div>
+        </div>
+    </section>
+    </div>
+    <!-- Footer  -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-left">
+                <div class="logo">
+                    <img src="/static/image/logo/Ajp.png" alt="Logo" />
+                </div>
+                <div class="alamat">
+                    <p>
+                        Jl. Raya Jatinangor No.135, Cikeruh, Kec. Jatinangor, Kabupaten
+                        Sumedang, Jawa Barat 45363
+                    </p>
+                </div>
+                <div class="jam">
+                    <h2>Jam Operasional</h2>
+                    <p>Senin - Minggu (08.00-18.00)</p>
+                </div>
+            </div>
+            <div class="footer-info">
+                <div class="info">
+                    <h2>Info</h2>
+
+                </div>
+                <div class="isi-info">
+                    <a href="">Tentang Kami</a>
+                    <a href="">Kategori</a>
+                </div>
+            </div>
+            <div class="footer-bantuan">
+                <div class="bantuan">
+                    <h2>Bantuan</h2>
+                </div>
+                <div class="isi-bantuan">
+                    <a href="">Kontak</a>
+                    <a href="">FAQ</a>
+                </div>
+            </div>
+            <div class="social">
+                <div class="ikuti-social">
+                    <h2>Ikuti Kami</h2>
+                </div>
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&#169;2024. GHETSIS VILAIN. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- js -->
+</body>
+
+</html>

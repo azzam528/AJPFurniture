@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AJPFurniture</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  
+  <link rel="shortcut icon" type="image" href="/static/image/logo/Ajp.png">
+</head>
+<style>
+  @import url('/static/css/default.css');
+  @import url('/static/css/home.css');
+</style>
+
+<body>
+  <div class="nav flex-row">
+    <div class="left flex-row">
+      <li>
+        <img src="/static/image/logo/Ajp.png" alt="Logo" class="logo" />
+      </li>
+    </div>
+    <div class="right flex-row">
+      <li>
+        <a href="/">Beranda</a>
+      </li>
+      <li>
+        <a href="about">Tentang Kami</a>
+      </li>
+      <li>
+        <a href="contact">Kontak</a>
+      </li>
+      <li class="dropdown">
+        <a class="dropdown-toggle">Kategori</a>
+        <ul class="dropdown-menu">
+          <li><a href="produk/kursi">Kursi</a></li>
+          <li><a href="produk/lemari">Lemari</a></li>
+          <li><a href="produk/meja">Meja</a></li>
+          <li><a href="produk/dipan">Dipan</a></li>
+          <li><a href="produk/sofa">Sofa</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="faq">FAQ</a>
+      </li>
+    </div>
+  </div>
+  <!-- navbar selesai -->
+  <div class="banners">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img class="rolling-banner" width="100%" src="static/image/Sofa4.jpg"></div>
+        <div class="swiper-slide"><img class="rolling-banner" width="100%" src="static/image/Sofa 2.jpg"></div>
+        <div class="swiper-slide"><img class="rolling-banner" width="100%" src="static/image/Sofa 3.jpg"></div>
+        <div class="swiper-slide"><img class="rolling-banner" width="100%" src="static/image/Sofa4.jpg"></div>
+      </div>
+    </div>
+    <div class="bottom-sections flex-col">
+      <p class="Judul">AJPFURNITURE
+      <p>
+      <p>Usaha bergerak dibidang usaha kayu baik pengerjaan interior maupun eksterior perabotan rumah dengan jenis kayu
+        jati, kayu keras hutan, teakblok , PVC dll</p>
+    </div>
+    <div class="box"></div>
+  </div>
+  <div class="category">
+    <div class="category-wrap">
+      <div class="title">KATEGORI</div>
+      <ul class="cards-box flex-row">
+        <li class="flex-col">
+          <div onclick="window.location.href = '/produk/dipan';" class="cards flex-col">
+            <img src="static/image/Dipan.jpg" class="card-img-top" alt="...">
+            <div class="text">Dipan</div>
+          </div>
+          <div onclick="window.location.href = '/produk/kursi';" class="cards flex-col" style="width: 18rem;">
+            <img src="static/image/Kursi tamu.jpg" class="card-img-top" alt="...">
+            <div class="text">Kursi Tamu</div>
+          </div>
+        </li>
+        <li class="flex-col">
+          <div onclick="window.location.href = '/produk/sofa';" class="cards flex-col" style="width: 18rem;">
+            <img src="static/image/Sofa Patra.jpg" class="card-img-top" alt="...">
+            <div class="text">Sofa</div>
+          </div>
+          <div onclick="window.location.href ='/produk/cermin';" class="cards flex-col" style="width: 18rem;">
+            <img src="/static/image-produk/meubeul/Cermin Frame Gold.jpg" class="card-img-top" alt="...">
+            <div class="text">Cermin</div>
+          </div>
+        </li>
+        <li class="flex-col">
+          <div onclick="window.location.href= '/produk/bale bale';" class="cards flex-col" style="width: 18rem;">
+            <img src="static/image/Bale Bale 2.jpg" class="card-img-top" alt="...">
+            <div class="text">Bale Bale</div>
+          </div>
+          <div onclick="window.location.href ='/produk/lemari';" class="cards flex-col" style="width: 18rem;">
+            <img src="/static/image-produk/meubeul/lemari bombai.jpg" class="card-img-top" alt="...">
+            <div class="text">Lemari</div>
+          </div>
+        </li>
+        <li class="flex-col">
+          <div onclick="window.location.href = '/produk/meja';" class="cards flex-col" style="width: 18rem;">
+            <img src="/static/image-produk/meubeul/Meja Cafe Garden.jpg" class="card-img-top" alt="...">
+            <div class="text">Meja</div>
+          </div>
+          <div onclick="window.location.href = '/produk/nakas';" class="cards flex-col" style="width: 18rem;">
+            <img src="static/image/Nakas.jpg" class="card-img-top" alt="...">
+            <div class="text">Nakas</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </div>
+  <div class="best-seller">
+    <div class="best-seller-wrap">
+      <div class="judul2">Best Seller</div>
+      <div class="card-best-seller flex-row">
+        <li class="flex-row">
+          <div class="card flex-col">
+            <img src="/static/image-produk/meubeul/Dipan lengkung corak bunga.jpg">
+            <div class="info">
+              <h1>Dipan Minimalis 6 Laci</h1>
+              <p>Dipan yang memiliki ukiran batik serta bunga didalam bundar yang membuat menjadi salah satu dipan yang paling di cari</p>
+              <a href="/belanja/Dipan Minimalis 6 Laci" class="btn">Beli</a>
+            </div>
+          </div>
+          <div class="card flex-col">
+            <img src="/static/image-produk/meubeul/kursi liberty.jpg">
+            <div class="info">
+              <h1>Kursi Liberty</h1>
+              <p>Kursi yang memiliki ukiran yang mewah, tidak hanya mewah bentuk dari kursi liberty sangat enak dijadikan untuk istirahat</p>
+              <a href="/belanja/Kursi Liberty" class="btn">Beli</a>
+            </div>
+          </div>
+          <div class="card flex-col">
+            <img src="/static/image-produk/meubeul/Lemari Jam.jpg">
+            <div class="info">
+              <h1>Lemari Jam</h1>
+              <p>Kapan lagi kita membeli lemari, yang memiliki fitur jam? tentu saja ini sangat menjadi paling banyak dibeli karena memiliki banyak keuntungan</p>
+              <a href="/belanja/Lemari Jam" class="btn">Beli</a>
+            </div>
+          </div>
+          <div class="card flex-col">
+            <img src="/static/image-produk/meubeul/Kursi Bola.jpg">
+            <div class="info">
+              <h1>Kursi Bola</h1>
+              <p>Kursi yang memiliki kesan vintage serta nyaman untuk digunakan sebagai ajang berbincang dengan keluarga, dan tentunya harga yg bersahabat membuat kursi ini diminati banyak orang</p>
+              <a href="/belanja/Kursi Bola" class="btn">Beli</a>
+            </div>
+          </div>
+        </li>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="location">
+    <p>location</p>
+    <div class="container">
+      <div class="gmaps">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.64201892813!2d107.77049337449633!3d-6.933319267866807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68c4a572504bb7%3A0x4507762241966de9!2sAjp%20Furniture!5e0!3m2!1sid!2sid!4v1713779557826!5m2!1sid!2sid"
+          width="400" height="400"></iframe>
+      </div>
+      <div class="content">
+        <div class="content-top">
+          <p>AJP Furniture</p>
+          <p>Melayani Pesan Langsung dan WhatsApp</p>
+        </div>
+        <div class="content-bot">
+          <i class="fas fa-map-marker-alt">&nbsp;&nbsp;Jalan Raya Jatinangor No.135</i>
+          <i class="fas fa-phone-alt">&nbsp;&nbsp; 022 7796606</i>
+          <i class="fab fa-whatsapp">&nbsp;&nbsp; +62 812-2315-581</i>
+          <i class="fab fa-instagram">&nbsp;&nbsp; @meubeuljati</i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="testimoni-wrapper">
+    <div class="judul3">Testimoni Furniture</div>
+    <div class="testimoni-content">
+      {% for review in ulasan %}
+      <div onclick="window.location.href = '/belanja/{{review.furniture}}'" class="testimoni-card">
+        <img src="/static/image-produk/meubeul/{{review.furniture}}.jpg" alt="Gambar Furniture">
+        <div class="testimoni-details">
+          <h2>{{review.nama_pengirim}}</h2>
+          <span class="furniture">{{review.furniture}}</span>
+          <p class="ulasan">{{review.ulasan}}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-left">
+          <div class="logo">
+            <img src="/static/image/logo/Ajp.png" alt="Logo" />
+          </div>
+          <div class="alamat">
+            <p>
+              Jl. Raya Jatinangor No.135, Cikeruh, Kec. Jatinangor, Kabupaten
+              Sumedang, Jawa Barat 45363
+            </p>
+          </div>
+          <div class="jam">
+            <h2>Jam Operasional</h2>
+            <p>Senin - Minggu (08.00-18.00)</p>
+          </div>
+        </div>
+        <div class="footer-info">
+          <div class="info">
+            <h2>Info</h2>
+          </div>
+          <div class="isi-info">
+            <a href="">Tentang Kami</a>
+            <a href="">Kategori</a>
+          </div>
+        </div>
+        <div class="footer-bantuan">
+          <div class="bantuan">
+            <h2>Bantuan</h2>
+          </div>
+          <div class="isi-bantuan">
+            <a href="">Kontak</a>
+            <a href="">FAQ</a>
+          </div>
+        </div>
+        <div class="social">
+          <div class="ikuti-social">
+            <h2>Ikuti Kami</h2>
+          </div>
+          <div class="social-media">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&#169;2024. GHETSIS VILAIN. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- footer selesai -->
+    <script>
+      const swiper = new Swiper('.swiper', {
+        autoplay: {
+          delay: 2000,
+        },
+
+        pagination: {
+          el: '.swiper-pagination',
+        },
+
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      });
+
+
+
+    </script>
+</body>
+
+</html>

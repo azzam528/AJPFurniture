@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AJPFurniture</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <!-- Icon -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- CSS -->
+  <link rel="shortcut icon" type="image" href="/static/image/logo/Ajp.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  </script>
+  <style>
+    @import url('/static/css/default.css');
+
+    /* nav */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px 120px;
+      background: #F5EFE3;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+    }
+
+    .nav a {
+      color: black;
+    }
+
+    .left {
+      margin-right: auto;
+    }
+
+    .left li .logo {
+      height: 55px;
+    }
+
+    .right {
+      margin-right: auto;
+    }
+
+    .right li {
+      margin-right: 80px;
+      font-weight: 500;
+      font-size: 15px;
+      color: black;
+      transition: transform 0.3s ease;
+
+    }
+
+    .right li:hover {
+      color: black;
+      cursor: pointer;
+      transform: translateY(-3px);
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-toggle {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      background-color: #F5EFE3;
+      min-width: 160px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .dropdown-menu li {
+      margin: 0;
+    }
+
+    .dropdown-menu a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-menu a:hover {
+      background-color: #cacaca;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+
+    .card-img-top {
+      border-radius: 20px;
+      padding: 10px;
+      object-fit: cover;
+      max-width: 100%;
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card {
+      height: 365px;
+      border-radius: 10px;
+      box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    }
+
+    .card-body {
+      padding: 25px;
+      margin-top: -15px;
+    }
+
+    .btn-light {
+      border-radius: 50px;
+      width: 120px;
+    }
+
+    .btn-light:hover {
+      background-color: #F5EFE3;
+    }
+
+
+    /* sampe sini */
+    .container {
+      max-width: 100%;
+      margin-top: 100px;
+      padding: 20px;
+    }
+
+    .kategori-produk {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+
+    }
+
+    .produk {
+      text-align: center;
+    }
+
+    .produk img {
+      max-width: 100%;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .produk li {
+      list-style: none;
+      margin-top: 5px;
+    }
+
+    .produk a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    .produk-bawah {
+      margin-top: 20px;
+    }
+
+    /* footer mulai */
+    footer {
+      background-color: #f1f1f1;
+      height: 370px;
+      border-bottom: 0.1px solid wheat;
+      border-radius: 5px 0;
+      width: 100%;
+    }
+
+    .footer-top {
+      display: flex;
+      flex-direction: row;
+      height: 310px;
+      border-bottom: 1px solid black;
+      margin-left: 100px;
+      margin-right: 60px;
+    }
+
+    footer .footer-left {
+      width: 350px;
+    }
+
+    footer .footer-left .logo>img {
+      width: 100px;
+      margin-top: 30px;
+    }
+
+    footer .footer-left .alamat {
+      font-size: 15px;
+      font-weight: 300;
+      text-align: justify;
+
+      margin-top: 10px;
+    }
+
+    footer .footer-left .jam h2 {
+      margin-top: 15px;
+      font-weight: 600;
+    }
+
+    footer .footer-left .jam p {
+      font-size: 15px;
+      margin-top: 10px;
+      margin-bottom: 60px;
+      font-weight: 300;
+    }
+
+    footer .footer-info,
+    footer .footer-bantuan,
+    footer .social {
+      width: 280px;
+      margin-left: 107px;
+    }
+
+    footer .footer-info h2,
+    footer .footer-bantuan h2,
+    footer .social h2 {
+      margin-top: 50px;
+      font-weight: bold;
+    }
+
+    footer .footer-info .isi-info,
+    footer .footer-bantuan .isi-bantuan {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      font-weight: 300;
+    }
+
+    footer .footer-info .isi-info a,
+    footer .footer-bantuan .isi-bantuan a {
+      color: #000000;
+      padding-top: 1px;
+      /* font-size: x-large; */
+    }
+
+    footer .footer-info .isi-info a:last-child,
+    footer .footer-bantuan .isi-bantuan a:last-child {
+      margin-top: 2px;
+    }
+
+    footer .social .social-media {
+      display: flex;
+      margin-top: 5px;
+      flex-direction: row;
+    }
+
+
+    footer .social .social-media a {
+      font-size: 30px;
+      color: #000000;
+      margin-right: 27px;
+    }
+
+    footer .copyright {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 40px;
+      margin-left: 100px;
+      margin-right: 100px;
+      margin-top: 20px;
+    }
+
+    /* footer selesai */
+  </style>
+</head>
+
+<body>
+  <!-- Navbar mulai -->
+  <div class="nav flex-row">
+    <div class="left flex-row">
+      <li>
+        <img src="/static/image/logo/Ajp.png" alt="Logo" class="logo" />
+      </li>
+    </div>
+    <div class="right flex-row">
+      <li>
+        <a href="/">Beranda</a>
+      </li>
+      <li>
+        <a href="/about">Tentang Kami</a>
+      </li>
+      <li>
+        <a href="/contact">Kontak</a>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle">Kategori</a>
+        <ul class="dropdown-menu">
+          <li><a href="/produk/kursi">Kursi</a></li>
+          <li><a href="/produk/lemari">Lemari</a></li>
+          <li><a href="/produk/meja">Meja</a></li>
+          <li><a href="/produk/dipan">Dipan</a></li>
+          <li><a href="/produk/sofa">Sofa</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="/faq">FAQ</a>
+      </li>
+    </div>
+  </div>
+  <div class="container py-5">
+    <h1 class="text-center">{{ keyword }}</h1>
+    <div class="kategori-produk">
+      {% set seen_names = [] %}
+      {% for prod in produk %}
+      {% set kategori = prod.kategori %}
+      {% set nama = prod.nama %}
+      {% if kategori == keyword and nama not in seen_names %}
+      {% set _ = seen_names.append(nama) %}
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="/static/image-produk/meubeul/{{ nama }}.jpg" class="card-img-top" alt="{{ nama }}">
+          <div class="card-body">
+            <h5 class="card-title">{{ nama }}</h5>
+          </div>
+          <div class="d-flex justify-content-around mb-5">
+            <h5>120 $</h5>
+            <button onclick="window.location.href='/belanja/{{ nama }}'" class="btn btn-light">Beli</button>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+  <!-- footer mulai -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-left">
+        <div class="logo">
+          <img src="/static/image/logo/Ajp.png" alt="Logo" />
+        </div>
+        <div class="alamat">
+          <p>
+            Jl. Raya Jatinangor No.135, Cikeruh, Kec. Jatinangor, Kabupaten
+            Sumedang, Jawa Barat 45363
+          </p>
+        </div>
+        <div class="jam">
+          <h2>Jam Operasional</h2>
+          <p>Senin - Minggu (08.00-18.00)</p>
+        </div>
+      </div>
+      <div class="footer-info">
+        <div class="info">
+          <h2>Info</h2>
+
+        </div>
+        <div class="isi-info">
+          <a href="">Tentang Kami</a>
+          <a href="">Kategori</a>
+        </div>
+      </div>
+      <div class="footer-bantuan">
+        <div class="bantuan">
+          <h2>Bantuan</h2>
+        </div>
+        <div class="isi-bantuan">
+          <a href="">Kontak</a>
+          <a href="">FAQ</a>
+        </div>
+      </div>
+      <div class="social">
+        <div class="ikuti-social">
+          <h2>Ikuti Kami</h2>
+        </div>
+        <div class="social-media">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&#169;2024. GHETSIS VILAIN. All rights reserved.</p>
+    </div>
+  </footer>
+  <!-- footer selesai -->
+</body>
+
+</html>

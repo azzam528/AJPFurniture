@@ -1,0 +1,280 @@
+body {
+    overflow-x: hidden;
+}
+
+/* nav */
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 120px;
+    background: #F5EFE3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.nav a {
+    color: black;
+}
+
+.left {
+    margin-right: auto;
+}
+
+.left li .logo {
+    height: 55px;
+}
+
+.right {
+    margin-right: auto;
+}
+
+.right li {
+    margin-right: 80px;
+    font-weight: 500;
+    font-size: 15px;
+    color: black;
+    transition: transform 0.3s ease;
+
+}
+
+.right li:hover {
+    color: black;
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #F5EFE3;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #cacaca;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+/* sampe sini */
+
+.banner {
+    margin-top: 78px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 250px;
+    padding: 0 20px;
+    background-color: #F8F5EF;
+    width: 100%;
+}
+
+.banner-title>p {
+    margin-top: 20px;
+    font-size: 25px;
+    margin-left: 250px;
+}
+
+.banner-image {
+    width: 250px;
+    height: 250px;
+    margin-right: 200px;
+}
+
+.banner-image img {
+    width: 100%;
+    height: 250px;
+
+}
+
+
+
+.pertanyaan-container {
+    margin-top: 50px;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.pertanyaan {
+    border-bottom: 1px solid #000;
+}
+
+.pertanyaan button {
+    width: 100%;
+    background-color: #fdfdfd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.pertanyaan p {
+    font-size: 20px;
+    max-height: 0;
+    opacity: 0;
+    line-height: 1.5;
+    overflow: hidden;
+    transition: all 0.6s ease;
+}
+
+.d-arrow {
+    transition: transform 0.5s ease-in;
+    color: #000;
+}
+
+.pertanyaan p.show {
+    max-height: 200px;
+    opacity: 1;
+    padding: 0px 15px 30px 15px;
+}
+
+.pertanyaan button .d-arrow.rotate {
+    transform: rotate(180deg);
+}
+
+/* footer mulai */
+footer {
+    background-color: #f1f1f1;
+    height: 370px;
+    border-bottom: 0.1px solid wheat;
+    border-radius: 5px 0;
+    width: 100%;
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: row;
+    height: 310px;
+    border-bottom: 1px solid black;
+    margin-left: 100px;
+    margin-right: 60px;
+}
+
+footer .footer-left {
+    width: 350px;
+}
+
+footer .footer-left .logo>img {
+    width: 100px;
+    margin-top: 30px;
+}
+
+footer .footer-left .alamat {
+    font-size: 15px;
+    font-weight: 300;
+    text-align: justify;
+
+    margin-top: 10px;
+}
+
+footer .footer-left .jam h2 {
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+footer .footer-left .jam p {
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    font-weight: 300;
+}
+
+footer .footer-info,
+footer .footer-bantuan,
+footer .social {
+    width: 280px;
+    margin-left: 107px;
+}
+
+footer .footer-info h2,
+footer .footer-bantuan h2,
+footer .social h2 {
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+footer .footer-info .isi-info,
+footer .footer-bantuan .isi-bantuan {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+footer .footer-info .isi-info a,
+footer .footer-bantuan .isi-bantuan a {
+    color: #000000;
+    padding-top: 1px;
+    /* font-size: x-large; */
+}
+
+footer .footer-info .isi-info a:last-child,
+footer .footer-bantuan .isi-bantuan a:last-child {
+    margin-top: 2px;
+}
+
+footer .social .social-media {
+    display: flex;
+    margin-top: 5px;
+    flex-direction: row;
+}
+
+
+footer .social .social-media a {
+    font-size: 30px;
+    color: #000000;
+    margin-right: 27px;
+}
+
+footer .copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+
+/* footer selesai */
